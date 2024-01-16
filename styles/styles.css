@@ -1,31 +1,26 @@
+    .Body{
+        background-color: black;
+    }
+    
     .cards-container {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        
     }
 
     .k-card {
-        width: 100px; 
+        width: 120px; 
         height: 200px; 
         margin: 10px;
         box-sizing: border-box;
         font-family: inherit;
         font-size: 14px;
-        line-height: 1.4285714286;
-
-    }
-
-    .k-card-horizontal {
         transform-style: preserve-3d;
         transition: transform 0.5s;
-        position: relative;
-    }
-
-    .card-row {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
+        position: relative;       
+        border-radius: 6px;
     }
 
     .imgfondo {
@@ -39,19 +34,20 @@
         position: absolute;
         top: 0;
         left: 0;
+        border-radius: 3px;
     }
 
     .cardback {
         width: 100%;
         height: 100%;
         background-size: cover;
-        background-position: center;
         transform-style: preserve-3d;
         backface-visibility: hidden;
         cursor: pointer;
-        position: absolute;
+        position: relative;
         top: 0;
         left: 0;
+        border-radius: 6px;
     }
 
     .flipped {
@@ -63,6 +59,119 @@
         margin-bottom: 50px;
     }
 
+    .btn{
+        position: relative;
+        display: inline-block;
+        padding: 25px 30px;
+        margin: 0 20px;
+        color: #FFAD00 !important;
+        font-size: 24px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: 0.5s;
+        letter-spacing: 4px;
+        border-radius: 0px !important;
+    }
+    .btnPromo {
+        filter: hue-rotate(70deg);
+    }
+    .btnRand {
+        filter: hue-rotate(160deg);
+    }
+    .btn:hover{
+        background: #FFAD00 !important;
+        color: #050801 !important;
+        box-shadow: 0 0 50px #FFAD00
+    }
+
+    .btn span {
+        position: absolute;
+  display: block;
+    }
+    .btn span:nth-child(1) {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, #FFAD00);
+        animation: animate1 1s linear infinite;
+    }
+    @keyframes animate1
+    {
+        0%
+        {
+            left: -100%;
+        }
+        50%, 100%
+        {
+            left: 100%;
+        }
+    }
+    .btn span:nth-child(2)
+    {
+        top: -100px;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, #FFAD00);
+        animation: animate2 1s linear infinite;
+        animation-delay: 0.25s;
+    }
+    @keyframes animate2
+    {
+        0%
+        {
+            top: -100%;
+        }
+        50%, 100%
+        {
+            top: 100%;
+        }
+    }
+    .btn span:nth-child(3)
+    {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, #FFAD00);
+        animation: animate3 1s linear infinite;
+        animation-delay: 0.5s;
+    }
+    @keyframes animate3
+    {
+        0%
+        {
+            right: -100%;
+        }
+        50%, 100%
+        {
+            right: 100%;
+        }
+    }
+    .btn span:nth-child(4)
+    {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, #FFAD00);
+        animation: animate4 1s linear infinite;
+        animation-delay: 0.75s;
+    }
+    @keyframes animate4
+    {
+        0%
+        {
+            bottom: -100%;
+        }
+        50%, 100%
+        {
+            bottom: 100%;
+        }
+    }
+
     .epic {
         border: 3px solid purple ;
         box-shadow: 0px 0px 15px purple;
@@ -71,7 +180,21 @@
     .legendary {
         border: 3px solid #f09500;
         box-shadow: 0px 0px 15px #f09500;
+        animation: infinite resplandorAnimation 2s;
+        backdrop-filter: brightness(0%);
     }
+
+    @keyframes resplandorAnimation {
+        0%,100%{
+          box-shadow: 0px 0px 26px #f09500;; 
+        }
+        50%{
+        box-shadow: 0px 0px 0px #f09500;;
+        
+        }
+      
+      }
+
     .common {
         border: 3px solid white;
         box-shadow: 0px 0px 15px white;
@@ -85,3 +208,39 @@
         width: 50%;
         height: 250px;
     }
+
+
+    /* TITULO NEON */
+
+    .Titulo {
+        font-family: "Tilt Neon", cursive !important;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "XROT" 0,
+          "YROT" 0;
+        display: flex;
+        justify-content: center;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        border: none;
+        font: normal 48px/normal "Warnes", Helvetica, sans-serif;
+        color: rgba(255,255,255,1);
+        text-decoration: normal;
+        text-align: center;
+        -o-text-overflow: clip;
+        text-overflow: clip;
+        white-space: pre;
+        text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #f09500 , 0 0 70px #f09500 , 0 0 80px #f09500 , 0 0 100px #f09500 ;
+      }
+
+      .Promo {
+        text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00f05c , 0 0 70px #00f05c , 0 0 80px #00f05c , 0 0 100px #00f05c ;
+      }
+
+      .Random {
+        text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #0054e5 , 0 0 70px #0054e5 , 0 0 80px #0054e5 , 0 0 100px #0054e5 ;
+      }

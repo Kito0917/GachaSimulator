@@ -4,81 +4,95 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Minado de pc Express</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles\styles.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alata&family=Neonderthaw&family=Tilt+Neon&display=swap" rel="stylesheet">
     </head>
     <body>
-
-        <div id="example">
-            <div class="cards-container" id="Permanente">
-        
-                <img class="imgBanner" src="Banners\Banner1.jpg" />
-         
-            </div>
-        
+<div class="Body">
+    <div class="Titulo">Banner Permanente </div>
+            <div class="cards-container" id="Permanente">      
+                <img class="imgBanner" src="Banners\Banner6.jpg" />  
+            </div> 
             <div style="display:flex; justify-content:center;">
                 <div class="botones">
-                    <button name="1roll" class="btn btn-warning btn-lg" style="width:100px;" onclick="generateCards(1, 'Permanente')">
+                    <button name="1roll" class="btn btn-lg" onclick="generateCards(1, 'Permanente')">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         1 ROLL
                     </button>
                 </div>
                 <div class="botones">
-                    <button name="10rolls" class="btn btn-warning btn-lg" style="width:100px;" onclick="generateCards(10, 'Permanente')">
+                    <button name="10rolls" class="btn btn-lg" onclick="generateCards(10, 'Permanente')">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         10 ROLLS
                     </button>
                 </div>
             </div>
-        
-        </div>
-        
-        <div id="example">
+            <div class="Titulo Promo">Banner Promocional </div>
             <div class="cards-container" id="Promocional">
-        
-                <img class="imgBanner" src="Banners\Banner2.png" />
-        
+                <img class="imgBanner" src="Banners\Banner5.png" />
             </div>
         
             <div style="display:flex; justify-content:center;">
                 <div class="botones">
-                    <button name="1roll" class="btn btn-warning btn-lg" style="width:100px;" onclick="generateCards(1, 'Promocional')">
+                    
+                    <button name="1roll" class="btn btnPromo btn-lg" onclick="generateCards(1, 'Promocional')">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                         1 ROLL
                     </button>
                 </div>
                 <div class="botones">
-                    <button name="10rolls" class="btn btn-warning btn-lg" style="width:100px;" onclick="generateCards(10, 'Promocional')">
+                    <button name="10rolls" class="btn btnPromo btn-lg" onclick="generateCards(10, 'Promocional')">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         10 ROLLS
                     </button>
                 </div>
             </div>
-        </div>
-        
-        <div id="example">
+            <div class="Titulo Random">Banner Random </div>
             <div class="cards-container" id="Adicional">
-        
-                <img class="imgBanner" src="Banners\Banner3.jpg" />
-        
+                <img class="imgBanner" src="Banners\Banner4.jpg" />
             </div>
-        
             <div style=" display:flex; justify-content:center;">
                 <div class="botones">
-                    <button name="1roll" class="btn btn-warning btn-lg" style="width:100px;" onclick="generateCards(1, 'Adicional')">
+                    <button name="1roll" class="btn btnRand btn-lg" onclick="generateCards(1, 'Adicional')">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         1 ROLL
                     </button>
                 </div>
                 <div class="botones">
-                    <button name="10rolls" class="btn btn-warning btn-lg" style="width:100px;" onclick="generateCards(10, 'Adicional')">
+                    <button name="10rolls" class="btn btnRand btn-lg" onclick="generateCards(10, 'Adicional')">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                         10 ROLLS
                     </button>
                 </div>
             </div>
-        </div>
 
         
 
-
+        </div>
         <script src="scripts\scripts.js" async defer></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
