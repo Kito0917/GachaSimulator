@@ -12,8 +12,71 @@
     </head>
     <body>
 
+        <div id="example">
+            <div class="cards-container" id="Permanente">
         
-        <h1>a</h1>
+                <img class="imgBanner" src="/Banners/Banner1.jpg" />
+         
+            </div>
+        
+            <div style="display:flex; justify-content:center;">
+                <div class="botones">
+                    <button name="1roll" class="btn btn-warning btn-lg" style="width:100px;" onclick="generateCards(1, 'Permanente')">
+                        1 ROLL
+                    </button>
+                </div>
+                <div class="botones">
+                    <button name="10rolls" class="btn btn-warning btn-lg" style="width:100px;" onclick="generateCards(10, 'Permanente')">
+                        10 ROLLS
+                    </button>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div id="example">
+            <div class="cards-container" id="Promocional">
+        
+                <img class="imgBanner" src="/Banners/Banner2.png" />
+        
+            </div>
+        
+            <div style="display:flex; justify-content:center;">
+                <div class="botones">
+                    <button name="1roll" class="btn btn-warning btn-lg" style="width:100px;" onclick="generateCards(1, 'Promocional')">
+                        1 ROLL
+                    </button>
+                </div>
+                <div class="botones">
+                    <button name="10rolls" class="btn btn-warning btn-lg" style="width:100px;" onclick="generateCards(10, 'Promocional')">
+                        10 ROLLS
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="example">
+            <div class="cards-container" id="Adicional">
+        
+                <img class="imgBanner" src="/Banners/Banner3.jpg" />
+        
+            </div>
+        
+            <div style=" display:flex; justify-content:center;">
+                <div class="botones">
+                    <button name="1roll" class="btn btn-warning btn-lg" style="width:100px;" onclick="generateCards(1, 'Adicional')">
+                        1 ROLL
+                    </button>
+                </div>
+                <div class="botones">
+                    <button name="10rolls" class="btn btn-warning btn-lg" style="width:100px;" onclick="generateCards(10, 'Adicional')">
+                        10 ROLLS
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
 
 
         <script src="/scripts/scripts.js" async defer></script>
