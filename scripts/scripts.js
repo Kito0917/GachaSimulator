@@ -79,7 +79,7 @@ function generateCards(count, containerId) {
 
         var imgfondo = document.createElement('div');
         imgfondo.className = 'imgfondo'; 
-        imgfondo.style.backgroundImage = `url('/Banners/${containerId}/Cardback.jpg')`;
+        imgfondo.style.backgroundImage = `url('Cardback.jpg')`;
 
         var flippedImgfondo = document.createElement('div');
         flippedImgfondo.className = 'imgfondo flipped';
