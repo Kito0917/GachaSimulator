@@ -21,7 +21,7 @@ function selectRandomImage(card, containerId) {
 
     var folderProbabilities = [0.75, 0.15, 0.06, 0.04];
 
-    var basePath = `../Banners/${containerId}/`;
+    var basePath = `(..\Banners\${containerId}\)`;
 
     var randomFolderIndex = selectRandomIndex(folderProbabilities);
     var selectedFolder = folders[randomFolderIndex];
@@ -35,7 +35,7 @@ function selectRandomImage(card, containerId) {
     var randomImage = randomImageNumber + format;
 
     var imgfondo = card.querySelector('.imgfondo');
-    imgfondo.style.backgroundImage = `url('${basePath}${selectedFolder}/${randomImage}')`;
+    imgfondo.style.backgroundImage = `url('${basePath}${selectedFolder}\${randomImage}')`;
 
     card.classList.remove('common', 'rare', 'epic', 'legendary');
     card.classList.add(selectedFolder.toLowerCase());
@@ -79,7 +79,7 @@ function generateCards(count, containerId) {
 
         var imgfondo = document.createElement('div');
         imgfondo.className = 'imgfondo'; 
-        imgfondo.style.backgroundImage = `url('/Banners/${containerId}/Cardback.jpg')`;
+        imgfondo.style.backgroundImage = `url('\Banners\${containerId}\Cardback.jpg')`;
 
         var flippedImgfondo = document.createElement('div');
         flippedImgfondo.className = 'imgfondo flipped';
