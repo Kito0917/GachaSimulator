@@ -21,7 +21,7 @@ function selectRandomImage(card, containerId) {
 
     var folderProbabilities = [0.75, 0.15, 0.06, 0.04];
 
-    var basePath = `/Banners/${containerId}/`;
+    var basePath = `https://kito0917.github.io/GachaSimulator/Banners/${containerId}/`;
 
     var randomFolderIndex = selectRandomIndex(folderProbabilities);
     var selectedFolder = folders[randomFolderIndex];
@@ -78,8 +78,8 @@ function generateCards(count, containerId) {
         card.onclick = function () { flipCard(this, i, containerId); };
 
         var imgfondo = document.createElement('div');
-        imgfondo.className = 'imgfondo'; 
-        imgfondo.style.backgroundImage = `url('/Banners/${containerId}/Cardback.jpg')`;
+        imgfondo.className = 'imgfondo';
+        imgfondo.style.backgroundImage = `url('https://kito0917.github.io/GachaSimulator/Banners/${containerId}/Cardback.jpg')`;        
 
         var flippedImgfondo = document.createElement('div');
         flippedImgfondo.className = 'imgfondo flipped';
